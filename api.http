@@ -22,7 +22,7 @@ Content-Type: application/json
 ###
 PUT http://localhost:5000/api/posts/62894994abcf26f374cab4ef 
 Content-Type: application/json
-Authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VySWQiOiI2Mjg5NDk4MmFiY2YyNmYzNzRjYWI0ZWQiLCJ1c2VybmFtZSI6InRoZWhpZXUiLCJpYXQiOjE2NTMxNzA5ODV9.cQeqeQ_8tb1eJhrbB0dUrIt8kNsMzkoIPiwxl1UTVsI
+Authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VySWQiOiI2Mjg5NDk4MmFiY2YyNmYzNzRjYWI0ZWQiLCJ1c2VybmFtZSI6InRoZWhpZXUiLCJpYXQiOjE2NTQ3NDk0MjR9.HMDpc7WF6iFFiKVhLSD_wCr084ooDpEB7KkffOJdjS8
 
 {
    "title":"third post",
@@ -33,3 +33,24 @@ Authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VySWQiOiI2Mjg5N
 ###
 DELETE  http://localhost:5000/api/posts/62894994abcf26f374cab4ef HTTP/1.1
 Authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VySWQiOiI2Mjg5NDk4MmFiY2YyNmYzNzRjYWI0ZWQiLCJ1c2VybmFtZSI6InRoZWhpZXUiLCJpYXQiOjE2NTMxNzA5ODV9.cQeqeQ_8tb1eJhrbB0dUrIt8kNsMzkoIPiwxl1UTVsI
+
+###
+GET http://localhost:5000/api/auth/ HTTP/1.1
+Authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VySWQiOiI2Mjg5NDk4MmFiY2YyNmYzNzRjYWI0ZWQiLCJ1c2VybmFtZSI6InRoZWhpZXUiLCJpYXQiOjE2NTQ1MTExMjN9.N4xJnO7aRQCefvdkUiXJxX1QVUNVu3D1J8mEtJpr704
+
+###
+GET http://localhost:5000/api/posts
+Authorization: bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VySWQiOiI2Mjg5NDk4MmFiY2YyNmYzNzRjYWI0ZWQiLCJ1c2VybmFtZSI6InRoZWhpZXUiLCJpYXQiOjE2NTQ3MTA3MTJ9.DlxugoqqN-fnkx7tTOcE04dqr_QYkESKkR0FwWeJyqM
+
+
+###
+POST http://localhost:5000/api/posts 
+Content-Type: application/json
+Authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VySWQiOiI2Mjg5NDk4MmFiY2YyNmYzNzRjYWI0ZWQiLCJ1c2VybmFtZSI6InRoZWhpZXUiLCJpYXQiOjE2NTQ3NDk0MjR9.HMDpc7WF6iFFiKVhLSD_wCr084ooDpEB7KkffOJdjS8
+
+{
+   "title":"new post",
+   "url":"google1.com",
+   "description":"test update lan 3",
+   "status":"LEARNED"
+}
