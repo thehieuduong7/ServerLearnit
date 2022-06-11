@@ -1,7 +1,7 @@
 GET http://localhost:5000/ HTTP/1.1
 
 ###
-POST http://localhost:5000/api/auth/login HTTP/1.1
+POST https://server-learnit-1.herokuapp.com/api/auth/login HTTP/1.1
 Content-Type: application/json
 
 {
