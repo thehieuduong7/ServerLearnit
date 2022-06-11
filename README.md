@@ -15,3 +15,6 @@
   + server api: https://mern-learnit-server1.herokuapp.com/api
     (source code server: https://github.com/thehieuduong7/ServerLearnit)
 - Refer: https://www.youtube.com/watch?v=rgFd17fyM4A&t=20767s&ab_channel=HenryWebDev
+- example demo Login with
+  + username: thehieu 
+  + password:1
