@@ -68,7 +68,6 @@ router.put("/:id", verifyToken, async (req, res) => {
 			{ title, description, url, status },
 			{ new: true }
 		);
-		await post.populate("user");
 		res.json({ success: true, message: "Update post success!!!", post });
 	} catch (err) {
 		console.log(err);
@@ -82,7 +81,6 @@ router.delete("/:id", verifyToken, async (req, res) => {
 	const filter = { _id: req.params.id, user: req.user.userId };
 	try {
 		const post = await Post.findOneAndDelete(filter);
-		await post.populate("user").select("-password");
 
 		res.json({ success: true, message: "Delete post success!!!", post });
 	} catch (err) {
